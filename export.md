@@ -6,11 +6,11 @@ TinyMCE support bundle all what we need into the same js file, so it will be eas
 
 At this moment, I will try to integrate as much as possible due to I'm still not sure yet. So, what I will bundle as below:
 * Theme: silver - this is newest from TinyMCE 5.x
-* Plugins: advlist,anchor,autolink,autoresize,autosave,bbcode,charmap,code,codesample,colorpicker,contextmenu,directionality,fullpage,fullscreen,hr,image,imagetools,insertdatetime,legacyoutput,link,lists,media,nonbreaking,pagebreak,paste,preview,quickbars,save,searchreplace,table,tabfocus,template,textcolor,textpattern,toc,visualblocks,visualchars,wordcount
+* Plugins: advlist,anchor,autolink,autoresize,autosave,bbcode,charmap,code,codesample,colorpicker,contextmenu,directionality,fullpage,fullscreen,hr,image,imagetools,insertdatetime,legacyoutput,link,lists,media,nonbreaking,pagebreak,paste,preview,save,searchreplace,table,tabfocus,template,textcolor,textpattern,toc,visualblocks,visualchars,wordcount
 
 So, final command for bundle will be:
 ```
-grunt bundle --themes=silver --plugins=advlist,anchor,autolink,autoresize,autosave,bbcode,charmap,code,codesample,colorpicker,contextmenu,directionality,fullpage,fullscreen,hr,image,imagetools,insertdatetime,legacyoutput,link,lists,media,nonbreaking,pagebreak,paste,preview,quickbars,save,searchreplace,table,tabfocus,template,textcolor,textpattern,toc,visualblocks,visualchars,wordcount
+grunt bundle --themes=silver --plugins=advlist,anchor,autolink,autoresize,autosave,bbcode,charmap,code,codesample,colorpicker,contextmenu,directionality,fullpage,fullscreen,hr,image,imagetools,insertdatetime,legacyoutput,link,lists,media,nonbreaking,pagebreak,paste,preview,save,searchreplace,table,tabfocus,template,textcolor,textpattern,toc,visualblocks,visualchars,wordcount
 ```
 
 *Note*: 
@@ -20,4 +20,8 @@ grunt bundle --themes=silver --plugins=advlist,anchor,autolink,autoresize,autosa
 
 # Output
 After execute above commands, we will have ```tinymce.full.js``` & ```tinymce.full.min.js``` on ```js/tincymce``` and skins output files
-  
+
+
+# Change log
+* 2019 May 26: remove ```quickbars``` due to it's quite annoy for writers
+* 2019 May 26: update sample after remove some redundant code, configuration
